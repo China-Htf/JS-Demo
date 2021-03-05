@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function getArrMax() {
+				var max = arguments[0];
+				for (var i = 1; i < arguments.length; i++) {
+					if(max < arguments[i]) {
+						max = arguments[i];
+					}
+				}
+				return max;
+			}
+			var re = getArrMax(1,2,5);
+			console.log(re);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

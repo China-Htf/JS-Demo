@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var arr = [2, 0, 3, 5, 0, 32, 15, 0, 36, 8]
+			var newArr = [];
+			// for(var i = 0; i < arr.length; i++){
+			// 	if (arr[i] > 0) {
+			// 		newArr[newArr.length] = arr[i];
+			// 	}
+			// }
+			var j = arr.length - 1;
+			for (var i = j; i >= 0; i--){
+				newArr[newArr.length] = arr[i];
+				j--;
+			}
+			console.log(newArr);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

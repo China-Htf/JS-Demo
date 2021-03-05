@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function backDay() {
+				var year = prompt('请您输入年数');
+				if (isRunYear(year)) {
+					alert('闰年29天');
+				} else {
+					alert('平年28天');
+				}
+			}
+			backDay();
+			function isRunYear(year) {
+				var flag = false;
+				if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+					flag = true;
+				}
+				return flag;
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

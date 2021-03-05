@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			// 1:更新变量
+			var myname = '韩腾飞';
+			console.log(myname);
+			myname = '周星驰';
+			console.log(myname);
+			// 2:声明多个变量
+			var myname = '韩腾飞',
+				age = 21,
+				email = '******@qq.com';
+			console.log(myname);
+			console.log(age);
+			console.log(email);
+			// 3:严格区分大小写，大小写不同，是两个变量
+			var app = '软件',
+				App = '好软件';
+			console.log(app);
+			console.log(App);
+			// 4:声明变量的特殊情况
+			// 4.1:只声明不赋值	程序也不知道里面存的什么，所以结果是  undefined  未定义的意思
+			var sex;
+			console.log(sex);	//undefined
+			// 4.2:不声明 不赋值 直接使用某个变量		报错，变量qq不存在
+			//console.log(qq);	//qq is not defined
+			// 4.3:不声明直接赋值		可正常运行
+			tel = 110;
+			console.log(tel);
+			// 
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

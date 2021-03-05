@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			//统计出字符出现的次数
+			var str = 'shdsakhkasjfhoasifashiofas';
+			var o = {};
+			for (i = 0; i < str.length; i++) {
+				var chars = str.charAt(i);
+				if (o[chars]) {
+					o[chars]++;
+				} else {
+					o[chars] = 1;
+				}
+			}
+			console.log(o);
+			
+			// 开始比较出现最多的字符
+			var max = 0;
+			var ch = '';
+			for (var k in o) {
+				if (o[k] > max) {
+					max = o[k];
+					ch = k;
+				}
+			}
+			console.log('出现最多的字符是: ' + ch + ' 出现的次数是: ' + max);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
